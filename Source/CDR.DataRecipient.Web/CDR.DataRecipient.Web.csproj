@@ -10,6 +10,9 @@
 		<AssemblyVersion>1.2.2</AssemblyVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'CDR.DataRecipient.Web.Development' " />
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'CDR.DataRecipient.Web.Container' " />
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'CDR.DataRecipient.Web.Release' " />
 	<ItemGroup>
 	  <None Remove="Certificates\tls-mock-data-recipient.pfx" />
 	</ItemGroup>
